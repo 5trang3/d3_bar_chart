@@ -5,8 +5,8 @@ d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/mas
   const barWidth = 1000 / json.data.length;
   const svg = d3.select('body')
                 .append('svg')
-                .attr('width', 1000)
-                .attr('height', 750)
+                .attr('width', svgWidth)
+                .attr('height', svgHeight)
 }, error => {
 
 })
