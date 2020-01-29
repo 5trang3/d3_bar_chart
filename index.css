@@ -9,3 +9,7 @@ body {
   justify-content: center;
   height: 100%;
 }
+
+rect:hover {
+  fill: #72B5B7;
+}
