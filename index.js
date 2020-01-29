@@ -7,6 +7,15 @@ d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/mas
                 .append('svg')
                 .attr('width', svgWidth)
                 .attr('height', svgHeight)
+  svg.selectAll('rect')
+     .data(gdpData)
+     .enter()
+     .append('rect')
+     .attr('x', (d, i) => i * barWidth)
+     .attr('y', (d) => svgHeight - d[1] / 25)
+     .attr('width', barWidth)
+     .attr('height', (d, i) => d[1] / 25)
+     .attr('fill', '#633A82')
 }, error => {
 
 })
