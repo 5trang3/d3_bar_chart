@@ -13,3 +13,13 @@ body {
 rect:hover {
   fill: #72B5B7;
 }
+
+div {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  background-color: #40e0d0;
+  text-align: center;
+  line-height: 50px;
+  visibility: hidden;
+}
