@@ -125,4 +125,6 @@ d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/mas
         .attr('font-size', '25px')
 }, error => {
 
+  // Log error to the console if issue retreiving data:
+  console.log('Data not received')
 })
