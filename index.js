@@ -18,8 +18,8 @@ d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/mas
   })
   console.log(gdpData);
   console.log(yearRange)
-  const svgWidth = 1000;
-  const svgHeight = 750;
+  const svgWidth = 1350;
+  const svgHeight = 850;
   const paddingBottom = 50;
   const paddingLeft = 50;
   const barWidth = 1000 / json.data.length;
