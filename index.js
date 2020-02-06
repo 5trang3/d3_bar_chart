@@ -96,6 +96,11 @@ d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/mas
         .text('GDP (Billions of USD)')
         .style('text-anchor', 'middle')
 
+     svg.append('text')
+        .attr('transform', 'translate(' + svgWidth/2 + ', ' + paddingBottom + ')')
+        .text('United States GDP by Year')
+        .style('text-anchor', 'middle')
+        .attr('font-size', '25px')
 }, error => {
 
 })
