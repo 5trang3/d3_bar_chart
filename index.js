@@ -39,7 +39,8 @@ d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/mas
                    .domain([d3.min(gdpData, (d) => d[1]), d3.max(gdpData, (d) => d[1])])
                    .range([svgHeight - paddingBottom, paddingBottom])
 
-  const xaxis = d3.axisBottom(xscale);
+  const xaxis = d3.axisBottom(xscale)
+                  .tickFormat(d3.format(''))
 
   const yAxis = d3.axisLeft(yscale);
 
